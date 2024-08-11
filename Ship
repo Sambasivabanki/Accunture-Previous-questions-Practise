@@ -1,0 +1,19 @@
+import java.util.Scanner;
+class Ship
+{
+    public static void main(String[] args)
+    {
+        Scanner sc=new Scanner(System.in);
+        System.out.println("Enter ship Capacity:");
+        int shipCapacity=sc.nextInt();
+        System.out.println("Enter totalPeople:");
+        int totalPeople=sc.nextInt();
+        int totalRounds=totalPeople/shipCapacity;
+        int remainingPeople=totalPeople%shipCapacity;
+        if(remainingPeople!=0)
+        {
+          totalRounds+=1;  
+        }
+        System.out.println("TotalRounds are:"+totalRounds);
+    }
+}
